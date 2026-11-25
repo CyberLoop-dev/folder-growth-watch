@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "folder-growth-watch"
+version = "1.0.0"
+description = "Snapshot folder metadata and report size changes over time"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+folder-growth-watch = "folder_growth_watch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["folder_growth_watch*"]
